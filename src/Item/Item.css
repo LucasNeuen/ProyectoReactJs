@@ -1,0 +1,25 @@
+header h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.detalle {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.detalle:hover {
+    color: #ff8c00;
+}
+
+.detalles {
+    text-align: center;
+    background-color: #000;
+}
+
+.card{
+    background-color: #000;
+}
+

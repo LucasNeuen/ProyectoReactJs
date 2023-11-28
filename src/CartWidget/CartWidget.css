@@ -1,12 +1,12 @@
-.img {
-float: right;
-
-
+.imgCarrito {
+    float: right;
+    margin-right: 30px;
+    
+    background-color: #fff;
 }
 
-.img img {
-    display: inline-block;
+.imgCarrito img {
     width: 50px;
-    margin-top: 12px;
     cursor: pointer;
+    
 }
