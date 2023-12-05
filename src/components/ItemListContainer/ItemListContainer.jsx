@@ -1,6 +1,6 @@
 import "./ItemListContainer.css";
 import { useState, useEffect } from "react";
-import { getProducts, getProductsById } from "../asynProducts";
+import { getProducts, getProductsById } from "../../data/asynProducts";
 import ItemList from "../ItemList/ItemList";
 
 
