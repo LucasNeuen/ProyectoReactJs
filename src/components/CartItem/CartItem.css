@@ -1,0 +1,15 @@
+.contenedorCarro {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0 auto; /* Esto centra horizontalmente el contenedor en su padre */
+
+}
+
+.contenedorCarro h2 {
+    color: #fff;
+}
+
+.contenedorCarro p {
+    color: #fff;
+}

@@ -2,7 +2,7 @@ import "./Item.css"
 import { Link } from "react-router-dom";
 
 
-const Item = ({id, nombre, precio, img, stock}) => {
+const Item = ({id, nombre, price, img, stock}) => {
 
     return (
         
@@ -25,7 +25,7 @@ const Item = ({id, nombre, precio, img, stock}) => {
                     <div className="card-content">
                         <div className="media-content">
                             <p className="title is-4">
-                                Precio: ${precio}
+                                Precio: ${price}
                             </p>
                             <p className="subtitle is-6">
                                 Stock disponible: {stock}

@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 import BurgerMenu from './BurgerMenu';
 import CartWidget from '../CartWidget/CartWidget';
 import "./NavBar.css";
-import { NavLink,Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 
 function NavBar() {

@@ -1,8 +1,27 @@
+import { useContext, useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
+import "./ItemDetail.css";
+
+import { CartContext } from "../../context/CartContext";
 
 
 
-const ItemDetail = ({id, nombre, category, precio, img, stock, descripcion}) => {
+const ItemDetail = ({id, nombre, category, price, img, stock, descripcion}) => {
+
+    const [quantityAdded, setQuantityAdded] = useState(0);
+
+    const { addItem } = useContext(CartContext)
+
+    const handleOnAdd = (quantity) => {
+        setQuantityAdded(quantity)
+
+        const item = {
+            id, nombre, price, img
+        }
+
+        addItem(item, quantity)
+    }
 
     return (
         <div className="columns is-centered">
@@ -24,7 +43,7 @@ const ItemDetail = ({id, nombre, category, precio, img, stock, descripcion}) => 
                         <div className="card-content">
                             <div className="media-content">
                                 <p className=" title is-4">
-                                    Precio: ${precio}
+                                    Precio: ${price}
                                 </p>
                                 <p className="title is-5">
                                 Categoria: {category}  
@@ -38,8 +57,14 @@ const ItemDetail = ({id, nombre, category, precio, img, stock, descripcion}) => 
                             </div>
                         </div>
 
-                        <footer>
-                            <ItemCount initial={0} stock={10} onAdd={(quantity) => console.log('Cantidad agregada ', quantity)} />
+                        <footer className="terminar0" >
+                            {
+                                quantityAdded > 0 ? (
+                                    <Link to='/cart' className="terminar">Terminar compra</Link>
+                                ) : (
+                                    <ItemCount initial={0} stock={stock} onAdd={handleOnAdd} />
+                                )
+                            }
                         </footer>
                     </div>  
                 </article>

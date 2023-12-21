@@ -6,19 +6,19 @@ const Contacto = () => {
 
     return(
         <>
-            <div class="caja derecha">
-                <p class="referencias">Contácto</p>
-                <div class="contenedor-1">
+            <div className="caja derecha">
+                <p className="referencias">Contácto</p>
+                <div className="contenedor-1">
                     <form id="form" action="#">
-                        <div class="email">
-                            <div  class="texto">Email *</div>
+                        <div className="email">
+                            <div  className="texto">Email *</div>
                             <input id="emailConsulta" type="email" required/>
                         </div>
-                        <div class="mensaje">
-                            <div class="texto">Mensaje *</div>
+                        <div className="mensaje">
+                            <div className="texto">Mensaje *</div>
                             <textarea id="textoConsulta"  cols="25" rows="2"></textarea>
                         </div>
-                        <div class="boton">
+                        <div className="boton">
                             <button id="btnConsulta" value="Send Email">Enviar</button>
                         </div>    
                     </form>
