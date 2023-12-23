@@ -58,6 +58,7 @@ const ItemDetail = ({id, nombre, category, price, img, stock, descripcion}) => {
                         </div>
 
                         <footer className="terminar0" >
+                            <div className="contenedorTerminar">
                             {
                                 quantityAdded > 0 ? (
                                     <Link to='/cart' className="terminar">Terminar compra</Link>
@@ -65,6 +66,7 @@ const ItemDetail = ({id, nombre, category, price, img, stock, descripcion}) => {
                                     <ItemCount initial={0} stock={stock} onAdd={handleOnAdd} />
                                 )
                             }
+                            </div>
                         </footer>
                     </div>  
                 </article>

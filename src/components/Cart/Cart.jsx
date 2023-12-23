@@ -7,15 +7,16 @@ import "./Cart.css"
 
 
 
+
 const Cart = () => {
     const { cart, clearCart, totalQuantity, totalPrice} = useContext(CartContext)
 
 
-    if (totalQuantity === 0) {
+    if (totalQuantity() === 0) {
         return (
-            <div>
+            <div className="contenedorNoProd">
                 <h1>No hay productos en el carrito</h1>
-                <Link to="/">Productos</Link>
+                <Link className="noProd" to="/">Ir a Productos</Link>
             </div>
         )
     }
@@ -23,10 +24,17 @@ const Cart = () => {
     return (
         <div>
             { cart.map(p => <CartItem key={p.id} {...p}/> )}
+            <div className="contenedorCart_">
+                <div className="contenedorCart">
+                    <h3>Total: ${totalPrice()}</h3>
+                    <button onClick={() => clearCart()}>Limpiar carrito</button>
+                    <Link className="contenedorBoton" to='/'>
+                        Seguir agregando
+                    </Link>
+                </div>
+            </div>
             <div className="contenedorCheckout">
-                <h3>Total: ${totalPrice}</h3>
-                <button onClick={() => clearCart()}>Limpiar carrito</button>
-                <Link to="/checkout">Checkout</Link>
+                <Link className="textCheckout" to="/checkout">Finalizar compra</Link>
             </div>
         </div>
     )

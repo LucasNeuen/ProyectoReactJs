@@ -25,18 +25,18 @@ function NavBar() {
                 <div className={` links ${clicked ? 'active' : ''}`}>                    
                     <ul>
                         <li>
-                            <a href="/#">
+                            
                                 <NavLink to={`/category/chombas`} className={({isActive}) => isActive? 'ActiveOption' : 'Option'}>Chombas</NavLink>
-                            </a>
-                            <a href="/#">
+                            
+                            
                                 <NavLink to={`/category/remeras`} className={({isActive}) => isActive? 'ActiveOption' : 'Option'}>Remeras</NavLink>
-                            </a>
-                            <a href="/#">
+                            
+                            
                                 <NavLink to={`/category/jeans`} className={({isActive}) => isActive? 'ActiveOption' : 'Option'}>Jeans</NavLink>
-                            </a>
-                            <a href="/#">
+                            
+                           
                                 <NavLink to={`/category/bermudas`} className={({isActive}) => isActive? 'ActiveOption' : 'Option'}>Bermudas</NavLink>
-                            </a>
+                            
                         </li>
                     </ul>
                 </div>

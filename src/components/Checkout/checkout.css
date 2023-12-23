@@ -1,0 +1,29 @@
+.checkoutContainer  {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkoutContainer h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.ordenId {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.ordenId span {
+    color: #ff8c00;
+    font-size: 3rem;
+    font-weight: bolder;
+}

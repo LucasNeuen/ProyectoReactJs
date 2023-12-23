@@ -1,0 +1,73 @@
+.contenedorFormulario {
+    width: 80%;
+    margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	background: #3a506b;
+	background: linear-gradient(-45deg, #3a506b, #6492bd, #010103);
+	box-shadow: 0 0 50px 0 #FF8C00;;
+}
+
+.checkFormulario{
+    width: 300px;
+    margin-top: 40px;
+   
+}
+
+.checkFormulario label{
+    display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.checkFormulario label input {
+    background-color: #212121;
+		color: #fff;
+		border: 1px solid #FF8C00;
+		padding: 15px 20px;
+		border-radius: 15px;
+		outline: none;
+		font-size: 14pt;
+		transition: 0.2s;
+}
+
+.checkFormulario label input:hover{
+    background-color: #454045;
+	border: solid 2px #FF8C00;
+	box-shadow: 0 0 5px #FF8C00;
+}
+
+.checkFormulario label input:focus{
+    background-color: #fff;
+	border: solid 2px #f3f3f4;
+	box-shadow: 0 0 20px 0 #FF8C00;
+	color: #000;
+}
+
+.contenedorOrdenBtn{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.contenedorOrdenBtn button{
+    color: #fff;
+	background-color: #FF8C00;
+	text-align: center;
+	padding: 15px;
+	border: none;
+	border-radius: 15px;
+	font-weight: 500;
+	font-size: 15pt;
+}
+
+.contenedorOrdenBtn button:hover {
+    background: #000;
+    color: #fff;
+    border: 3px solid #FF8C00;
+}

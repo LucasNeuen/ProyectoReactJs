@@ -1,15 +1,44 @@
-.contenedorCarro {
-    text-align: center;
-    border: 1px solid #ccc;
+.contenedorItem {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    border: 2.5px solid #FF8C00;;
     padding: 20px;
-    margin: 0 auto; /* Esto centra horizontalmente el contenedor en su padre */
+    margin-top: 50px;
+    
+}
+
+.contenedorItem_{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorItem h2 {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.contenedorItem p {
+    color: #fff;
+    font-size: 1.3rem;
 
 }
 
-.contenedorCarro h2 {
+.contenedorItem button {
+    font-size: 1.2rem;
+    background-color: #000;
     color: #fff;
+    width: 15%;
+    height: 40px;
+    border: 1px solid #ff8c00;
+    font-weight: 500;
+       
 }
 
-.contenedorCarro p {
-    color: #fff;
+.contenedorItem button:hover{
+    background: #ff8c00;
+    color: #fff; 
 }

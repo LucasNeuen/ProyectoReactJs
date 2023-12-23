@@ -1,14 +1,15 @@
 .terminar {
     background-color: #000;
     color: #fff;
-    width: 100%;
+    justify-content: center;
     height: 2.5rem;
     line-height: 35px;
     align-items: center;
     font-size: 1.2rem;
     border: 2px solid #ff8c00;
     cursor: pointer;
-
+    display: flex;
+    text-align: center;
 }
 
 .terminar:hover {
@@ -18,7 +19,16 @@
 
 .terminar0 {
     text-align: center;
+    justify-content: center;
+    display: flex;
     
-    
+}
+
+.contenedorTerminar {
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 

@@ -11,7 +11,7 @@ const ReferenciasCentro = () => {
                 <div className="contenedor-1">
                     <div className="lugar">
                         <span><FaMapMarkerAlt className="fas"/></span>
-                        <span class="texto">Rio Segundo - Córdoba</span>
+                        <span className="texto">Rio Segundo - Córdoba</span>
                     </div>
                     <div className="telefono">
                         <span><FaPhoneSquare className="fas"/></span>
